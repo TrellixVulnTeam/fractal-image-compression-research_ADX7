@@ -1,0 +1,8 @@
+stages:
+  extract-images:
+    cmd: python src/preprocessing/extract_images.py
+    deps:
+    - data/imagenette2-320.tgz
+    - src/preprocessing/extract_images.py
+    outs:
+    - data/imagenette2-320

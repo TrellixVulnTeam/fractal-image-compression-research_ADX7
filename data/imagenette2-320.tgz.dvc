@@ -1,0 +1,10 @@
+md5: dc43e4b371ddcd509dc4d8975cff1b25
+frozen: true
+deps:
+- etag: '"894c3361e6e919faf86e611f55c90813-41"'
+  size: 341663724
+  path: https://s3.amazonaws.com/fast-ai-imageclas/imagenette2-320.tgz
+outs:
+- md5: 3df6f0d01a2c9592104656642f5e78a3
+  size: 341663724
+  path: imagenette2-320.tgz

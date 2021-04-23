@@ -1,0 +1,16 @@
+schema: '2.0'
+stages:
+  extract-images:
+    cmd: python src/preprocessing/extract_images.py
+    deps:
+    - path: data/imagenette2-320.tgz
+      md5: 3df6f0d01a2c9592104656642f5e78a3
+      size: 341663724
+    - path: src/preprocessing/extract_images.py
+      md5: c8b52477b175b13f550a42ead2c41533
+      size: 181
+    outs:
+    - path: data/imagenette2-320
+      md5: 93adeb3026e083cdaad4e59a93d747dc.dir
+      size: 349538788
+      nfiles: 13395
