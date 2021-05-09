@@ -2,3 +2,5 @@ dvc==2.0.18
 torch==1.8.1
 torchvision==0.9.1
 Pillow==8.2.0
+bitarray==2.1.0
+tqdm==4.60.0
