@@ -1,4 +1,3 @@
-import itertools
 import struct
 from typing import List
 

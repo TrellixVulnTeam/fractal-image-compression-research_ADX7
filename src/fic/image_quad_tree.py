@@ -118,7 +118,6 @@ class ImageQuadTree:
         for transformation in transformations:
             encoded.frombytes(struct.pack("i", transformation[0]))
             encoded += transformation[1].encode()
-        print(len(transformations))
         return encoded
 
     def decode(self, encoded: bitarray):
@@ -135,7 +134,6 @@ class ImageQuadTree:
                 queue += current_tree._children
             else:
                 leafs.append(current_tree)
-        print(len(leafs))
         for leaf in leafs:
             leaf._source_idx = struct.unpack("i", encoded[:32])[0]
             del encoded[:32]
